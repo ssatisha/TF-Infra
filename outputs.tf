@@ -5,3 +5,16 @@ output "public_ip" {
     description = "The Public IP of the instance"
     value = aws_instance.example.public_ip
 }
+
+output "instance_hostname" {
+  description = "Private DNS name of the EC2 instance."
+  value       = aws_instance.example.private_dns
+}
+
+output "instance_security_group_ids" {
+  value = aws_instance.example.vpc_security_group_ids
+}
+
+output "instance_subnet" {
+  value = aws_instance.example.subnet_id
+}
