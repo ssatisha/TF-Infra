@@ -1,5 +1,6 @@
 resource "aws_instance" "example" {
     ami = data.aws_ami.ubuntu.id
+    region     = "us-west-2"
     instance_type = var.instance_type
     #key_name = var.key_name
     tags = {
