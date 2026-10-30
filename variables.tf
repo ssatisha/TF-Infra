@@ -1,27 +1,11 @@
-#variable "ami_id" {
-#    description = "AWS AMI ID to use for the instance"
-#    type = string
-#}
-
 variable "instance_type" {
-    description = "Instance Type"
-    type = string
+  description = "The EC2 instance's type."
+  type        = string
+  default     = "t3.micro"
 }
-
-#variable "key_name" {
-#    description = "EC2 Key pair name"
-#    type = string
-#}
 
 variable "instance_name" {
-    description = " Name of the Instance"
-    type = string
-}
-variable "AWS_ACCESS_KEY_ID" {
-    description = " aws access key"
-    type = string
-}
-variable "AWS_SECRET_ACCESS_KEY" {
-    description = "aws secret access key"
-    type = string
+  description = "Value of the EC2 instance's Name tag."
+  type        = string
+  default     = "learn-terraform"
 }
