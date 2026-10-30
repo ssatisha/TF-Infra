@@ -3,8 +3,7 @@ provider "aws" {
     AWS_SECRET_ACCESS_KEY = var.AWS_SECRET_ACCESS_KEY_ID
     }
 
-
-resource "aws_instance" "ec2-webserver" {
+resource "aws_instance" "example" {
     ami = data.aws_ami.ubuntu.id
     instance_type = var.instance_type
     key_name = var.key_name
