@@ -18,3 +18,6 @@ output "instance_security_group_ids" {
 output "instance_subnet" {
   value = aws_instance.example.subnet_id
 }
+output "instance_subnet" {
+  value = aws_instance.example.subnet_id
+}
