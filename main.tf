@@ -1,9 +1,8 @@
-provider {
-    aws = { 
+provider "aws" { 
     AWS_ACCESS_KEY_ID     = var.AWS_ACCESS_KEY_ID
     AWS_SECRET_ACCESS_KEY = var.AWS_SECRET_ACCESS_KEY_ID
     }
-}
+
 
 resource "aws_instance" "web" {
     ami = data.aws_ami.ubuntu.id
