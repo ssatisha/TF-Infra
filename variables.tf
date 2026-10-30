@@ -8,10 +8,10 @@ variable "instance_type" {
     type = string
 }
 
-variable "key_name" {
-    description = "EC2 Key pair name"
-    type = string
-}
+#variable "key_name" {
+#    description = "EC2 Key pair name"
+#    type = string
+#}
 
 variable "instance_name" {
     description = " Name of the Instance"
