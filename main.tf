@@ -2,7 +2,7 @@ provider "aws" {
   region     = "us-west-2"
 }
 resource "aws_instance" "example" {
-    ami = ami-07f3a2cfd03d8ee81
+    ami = "ami-07f3a2cfd03d8ee81"
     instance_type = var.instance_type
     tags = {
         Name = var.instance_name
