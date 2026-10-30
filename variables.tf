@@ -17,4 +17,11 @@ variable "instance_name" {
     description = " Name of the Instance"
     type = string
 }
-
+variable "AWS_ACCESS_KEY_ID" {
+    description = " aws access key"
+    type = string
+}
+variable "AWS_SECRET_ACCESS_KEY" {
+    description = "aws secret access key"
+    type = string
+}
